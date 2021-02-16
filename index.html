@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/united/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <form id="task-form">
+                            <div class="form-group">
+                                <input autofocus type="text" name="task-title" id="task-title" class="form-control" placeholder="Título">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="task-description" id="task-description" cols="30" rows="3" class="form-control" placeholder="Descrição"></textarea>
+                            </div>
+                            <button class="btn btn-primary" id="btn-task-form">
+                                Salvar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-4" id="tasks-container">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDtDl3hm1Jtw3WVTrvIutcVqn5_MzJD0O0",
+            authDomain: "fire-notes-fcab8.firebaseapp.com",
+            projectId: "fire-notes-fcab8",
+            storageBucket: "fire-notes-fcab8.appspot.com",
+            messagingSenderId: "848098137383",
+            appId: "1:848098137383:web:20435d8dacf814c5558502"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
